@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Wael </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Loader overlay -->
+    <div class="loader-overlay">
+        <div class="loader">
+            <div class="balls">
+                <div class="ball moving"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+            </div>
+        </div>
+        <!-- SVG filter for gooey effect -->
+        <svg>
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav-logo">Mohammad Wael</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="dark-mode-container">
+                <div class="dark-mode-toggle" id="dark-mode-toggle">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="home" id="home">
+            <div class="home-container bd-grid">
+                <h1 class="home-title"><span>HE</span><br>LLO</h1>
+
+                <div class="home-scroll">
+                    <a href="#about" class="home-scroll-link"><i class='bx bx-up-arrow-alt' ></i>SCROLL DOWN</a>
+                </div>
+
+                <img src="img/mw2.png" alt="John Doe" class="home-img">
+            </div>
+        </section>
+    
+
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about-container bd-grid">
+                <div class="about-img">
+                    <img src="img/mw22.png" alt="John Doe image">
+                </div>
+
+                <div>
+                    <h2 class="about-subtitle">I'm Mohammad Wael</h2>
+                    <span class="about-profession">Electrical Power Engineer & Front-End Developer</span>
+                    <p class="about-text">I am an Electrical Power Engineering student at Zagazig University with a passion for front-end development. I seek a career opportunity in a multinational, well-established corporation where I can develop and apply my skills effectively. I am a fast learner, highly adaptable, and excel in team environments, bringing a unique perspective to technical projects.</p>
+
+                    <div class="about-social">
+                        <a href="https://www.linkedin.com/in/mwkaa" class="about-social-icon"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/E-MWK" class="about-social-icon"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/mwka_a" class="about-social-icon"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills-container bd-grid">
+                <div class="skills-box">
+                    <h3 class="skils-subtitle">Development</h3>
+
+                    <span class="skills-name">HTML</span>
+                    <span class="skills-name">CSS</span>
+                    <span class="skills-name">JAVASCRIPT</span>
+                    <span class="skills-name">C++</span>
+                    <span class="skills-name">C</span>
+                    <!--<span class="skills-name">VUE</span>-->
+
+                    <h3 class="skils-subtitle">Electrical Engineering</h3>
+
+                    <span class="skills-name">Renewable Energy Systems</span>
+                    <span class="skills-name">Electrical Safety Standards</span>
+                    <span class="skills-name">Energy Efficiency</span>
+                    <span class="skills-name">Electrical Control Systems</span>
+
+                    <h3 class="skils-subtitle">Personal Skills</h3>
+
+                    <span class="skills-name">Quick learning ability</span>
+                    <span class="skills-name">Professional responsibility</span>
+                    <span class="skills-name">Working under pressure</span>
+                    <span class="skills-name">Teamwork and collaboration</span>
+                 
+                </div>
+
+                <div class="skills-img">
+                    <img src="img/skills.png" alt="skills image">
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="portfolio-container bd-grid">
+                <div class="portfolio-img">
+                    <img src="img/cv4.jpg" alt="work image">
+
+                    <div class="portfolio-link">
+                        <a href="#" class="portfolio-link-name">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-img">
+                    <img src="img/Certificates.jpg" alt="work image">
+
+                    <div class="portfolio-link">
+                        <a href="#" class="portfolio-link-name">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-img">
+                    <img src="img/training.jpg" alt="work image">
+
+                    <div class="portfolio-link">
+                        <a href="#" class="portfolio-link-name">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-img">
+                    <img src="img/projects3.jpg" alt="work image">
+
+                    <div class="portfolio-link">
+                        <a href="#" class="portfolio-link-name">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-img">
+                    <img src="img/ac22.jpg" alt="work image">
+
+                    <div class="portfolio-link">
+                        <a href="#" class="portfolio-link-name">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-img">
+                    <img src="img/co.jpg" alt="work image">
+
+                    <div class="portfolio-link">
+                        <a href="#" class="portfolio-link-name">View Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact-container bd-grid">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">EMAIL</h3>
+                    <span class="contact-text">mwkaa17@gmail.com</span>
+
+                    <h3 class="contact-subtitle">PHONE</h3>
+                    <span class="contact-text">+20 1555232801</span>
+
+                    <h3 class="contact-subtitle">ADDRESS</h3>
+                    <span class="contact-text">Abu Kebeer - Sharkia, Egypt</span>
+                </div>
+
+                <form action="" class="contact-form">
+                    <div class="contact-inputs">
+                        <input type="text" placeholder="Name" class="contact-input">
+                        <input type="email" placeholder="Email" class="contact-input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+
+                    <input type="submit" value="Send" class="contact-button">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer section">
+        <div class="footer-container bd-grid">
+            <div class="footer-data">
+                <h2 class="footer-title">Mohammad Wael</h2>
+                <p class="footer-text">I'm Mohammad Wael Electrical Power Engineer & Front-End Developer</p>
+            </div>
+
+            <div class="footer-data">
+                <h2 class="footer-title">Mohammad Wael</h2>
+                <ul>
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#skills" class="footer-link">Skills</a></li>
+                    <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-data">
+                <h2 class="footer-title">FOLLOW</h2>
+
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/mwkaa" class="footer-social"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/E-MWK" class="footer-social"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/mwka_a" class="footer-social"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            
+            // Check for saved theme preference
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.documentElement.classList.add('dark-theme');
+                document.body.classList.add('dark-theme');
+            }
+            
+            // Toggle dark mode
+            darkModeToggle.addEventListener('click', () => {
+                if (document.body.classList.contains('dark-theme')) {
+                    document.documentElement.classList.remove('dark-theme');
+                    document.body.classList.remove('dark-theme');
+                    localStorage.setItem('darkMode', 'disabled');
+                } else {
+                    document.documentElement.classList.add('dark-theme');
+                    document.body.classList.add('dark-theme');
+                    localStorage.setItem('darkMode', 'enabled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
